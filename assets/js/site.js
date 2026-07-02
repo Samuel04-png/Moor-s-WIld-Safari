@@ -45,6 +45,14 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
 
+document.querySelectorAll("img[data-fallback]").forEach((image) => {
+  image.addEventListener("error", () => {
+    if (image.dataset.fallbackApplied === "true") return;
+    image.dataset.fallbackApplied = "true";
+    image.src = image.dataset.fallback;
+  });
+});
+
 const filterButtons = document.querySelectorAll("[data-filter]");
 const galleryCards = document.querySelectorAll("[data-category]");
 
