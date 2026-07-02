@@ -1,10 +1,12 @@
 # Moor's Wild Safaris Website
 
-Premium static website for Moor's Wild Safaris, a Zambia-based safari company offering tailor-made safaris, lodge stays, mobile camps, photographic itineraries, cultural tours, hosted trips, and transfers across Southern Africa.
+Premium static website for Moor's Wild Safaris, a Zambia-based safari and travel company offering tailor-made safaris, lodge stays, mobile camps, photographic itineraries, beach holidays, hiking and trekking trips, adventure tours, cultural tours, hosted trips, and transfers across Zambia, Malawi, Zimbabwe, Botswana, and Namibia.
 
 ## What is included
 
 - Multi-page static website: Home, About, Experiences, Destinations, Gallery, Reviews, FAQ, Contact, Privacy, and Booking Terms.
+- Zambia-first destination coverage with Malawi, Zimbabwe, Botswana, and Namibia as regional operating destinations.
+- Expanded service coverage for private safaris, luxury safaris, family holidays, photographic safaris, walking safaris, birdwatching, camping safaris, lodge and hotel bookings, beach holidays, hiking, adventure tours, cross-border tours, and tailor-made itineraries.
 - Local brand assets copied from the supplied logo files.
 - Generated project-local safari imagery for hero, lodge, camp, photography, and transfer art direction.
 - Responsive CSS design system with warm safari palette, editorial typography, accessible focus states, reduced motion support, mobile navigation, and gallery layout.

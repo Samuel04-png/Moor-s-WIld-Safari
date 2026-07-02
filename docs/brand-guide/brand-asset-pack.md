@@ -2,7 +2,7 @@
 
 ## Brand Position
 
-Moor's Wild Safaris should feel warm, premium, grounded, trustworthy, and personal. The logo suggests sunset light, acacia silhouettes, elephants, a safari vehicle, canvas camp, and overland exploration. The digital brand translates those signals into spacious editorial layouts, tactile color, restrained motion, and practical planning language.
+Moor's Wild Safaris should feel warm, premium, grounded, trustworthy, and personal. The logo suggests sunset light, acacia silhouettes, elephants, a safari vehicle, canvas camp, and overland exploration. The digital brand translates those signals into spacious editorial layouts, tactile color, restrained motion, and practical planning language. Zambia remains the lead destination, with Malawi, Zimbabwe, Botswana, and Namibia presented as carefully planned Southern Africa extensions.
 
 ## Logo Usage
 
@@ -87,7 +87,7 @@ The current project includes code-ready equivalents of the required brand boards
 - UI sample components: cards, buttons, forms, tags, testimonials, gallery
 - Safari vehicle livery direction: logo should sit on white or sand body panels with sunrise accent stripe
 - T-shirt direction: transparent logo centered on canvas, olive, or charcoal fabric
-- Roll-up banner direction: hero image, logo at top, "Tailor-made Zambia safaris" headline, CTA at bottom
+- Roll-up banner direction: hero image, logo at top, "Zambia safaris and Southern Africa journeys" headline, CTA at bottom
 - Business card direction: logo front, contact details on canvas back, sunrise line accent
 
 ## Asset Inventory

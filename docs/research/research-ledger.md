@@ -81,6 +81,27 @@ Reject:
 | Next.js | Strong routing and metadata | Requires package setup and build tooling | Suitable future upgrade |
 | Webflow/Framer style | Quick visual assembly | High risk of template feel | Rejected |
 
+## Destination and Service Scope
+
+The updated site positions Zambia as the main destination while clearly presenting Malawi, Zimbabwe, Botswana, and Namibia as regional operating destinations. The destination content covers national parks, major attractions, and activities for each country, including safari, beach, hiking, adventure, cultural, photographic, luxury, camping, birdwatching, and cross-border travel.
+
+Core services now shown across the site:
+
+- Airport transfers and pickups
+- Private safaris
+- Luxury safaris
+- Family holidays
+- Photographic safaris
+- Walking safaris
+- Birdwatching tours
+- Camping safaris
+- Lodge and hotel bookings
+- Beach holidays
+- Hiking and trekking trips
+- Adventure tours
+- Cross-border tours
+- Tailor-made itineraries
+
 ## Sitemap
 
 - Home
