@@ -94,7 +94,8 @@ select {
 }
 
 .nav-wrap {
-  width: min(100% - 2rem, var(--max));
+  width: calc(100% - 2rem);
+  max-width: var(--max);
   min-height: 78px;
   margin: 0 auto;
   display: flex;
@@ -188,7 +189,7 @@ select {
   background:
     linear-gradient(90deg, rgba(17, 12, 8, 0.86) 0%, rgba(17, 12, 8, 0.58) 38%, rgba(17, 12, 8, 0.16) 76%),
     linear-gradient(0deg, rgba(17, 12, 8, 0.84) 0%, rgba(17, 12, 8, 0) 40%),
-    url("../images/zambia-safari-golden-hour-hero.png") center / cover no-repeat;
+    url("../images/moorsimg/1001575809.jpg") 54% center / cover no-repeat;
 }
 
 .hero::after {
@@ -203,7 +204,8 @@ select {
 .hero-content {
   position: relative;
   z-index: 1;
-  width: min(100% - 2rem, var(--max));
+  width: calc(100% - 2rem);
+  max-width: var(--max);
   margin: 0 auto;
   padding: 8.5rem 0 8rem;
 }
@@ -330,7 +332,8 @@ p {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
-  width: min(100% - 2rem, var(--max));
+  width: calc(100% - 2rem);
+  max-width: var(--max);
   margin: -4rem auto 0;
   position: relative;
   z-index: 5;
@@ -359,7 +362,8 @@ p {
 }
 
 .section {
-  width: min(100% - 2rem, var(--max));
+  width: calc(100% - 2rem);
+  max-width: var(--max);
   margin: 0 auto;
   padding: clamp(4.5rem, 8vw, 8rem) 0;
 }
@@ -479,6 +483,12 @@ p {
   background: linear-gradient(0deg, rgba(27, 20, 15, 0.5), rgba(27, 20, 15, 0));
 }
 
+.planning-panel {
+  min-height: 280px;
+  margin-bottom: 1rem;
+  box-shadow: none;
+}
+
 .number-list {
   display: grid;
   gap: 1rem;
@@ -549,15 +559,25 @@ p {
 
 .feature-list article {
   min-height: 220px;
-  padding: 1.35rem;
+  padding: 0;
   background: var(--canvas);
+  overflow: hidden;
 }
 
-.feature-list svg {
-  width: 34px;
-  height: 34px;
-  color: var(--sun);
-  margin-bottom: 1.2rem;
+.feature-media {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--canvas-2);
+}
+
+.feature-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-body {
+  padding: 1.35rem;
 }
 
 .destinations {
@@ -801,6 +821,10 @@ p {
   min-height: 300px;
 }
 
+.gallery-strip a:nth-child(4) {
+  min-height: 340px;
+}
+
 .gallery-strip img,
 .gallery-card img {
   width: 100%;
@@ -828,6 +852,33 @@ p {
   position: absolute;
   inset: 0;
   background: linear-gradient(0deg, rgba(27, 20, 15, 0.7), rgba(27, 20, 15, 0.08) 62%);
+}
+
+.journey-preview {
+  display: grid;
+  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.video-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.video-frame video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-note {
+  margin-top: 1rem;
+  color: rgba(27, 20, 15, 0.66);
 }
 
 .quote-grid {
@@ -870,12 +921,13 @@ p {
 }
 
 .cta-band {
-  width: min(100% - 2rem, var(--max));
+  width: calc(100% - 2rem);
+  max-width: var(--max);
   margin: 0 auto clamp(4rem, 7vw, 7rem);
   padding: clamp(2rem, 5vw, 4rem);
   background:
     linear-gradient(135deg, rgba(27, 20, 15, 0.96), rgba(49, 95, 104, 0.9)),
-    url("../images/mobile-safari-camp-golden-hour.png") center / cover;
+    url("../images/moorsimg3/FB_IMG_1732504932266.jpg") center / cover;
   color: var(--canvas);
   border-radius: var(--radius);
   display: grid;
@@ -893,18 +945,30 @@ p {
 .page-hero {
   padding: 10rem 0 5rem;
   background:
-    linear-gradient(90deg, rgba(27, 20, 15, 0.9), rgba(27, 20, 15, 0.58)),
-    url("../images/zambia-safari-golden-hour-hero.png") center / cover;
+    linear-gradient(90deg, rgba(27, 20, 15, 0.96), rgba(27, 20, 15, 0.72)),
+    url("../images/moorsimg3/FB_IMG_1722877491290.jpg") center / cover;
   color: var(--canvas);
 }
 
 .page-hero-inner {
-  width: min(100% - 2rem, var(--max));
+  width: calc(100% - 2rem);
+  max-width: var(--max);
   margin: 0 auto;
 }
 
 .page-hero h1 {
   max-width: 12ch;
+  color: var(--canvas);
+  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.42);
+}
+
+.page-hero .lead {
+  color: rgba(251, 247, 239, 0.92);
+}
+
+.page-hero [data-reveal] {
+  opacity: 1;
+  transform: none;
 }
 
 .breadcrumbs {
@@ -1197,6 +1261,50 @@ textarea {
   font-weight: 800;
 }
 
+.contact-list {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 0.8rem;
+}
+
+.contact-number {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.contact-number strong {
+  color: inherit;
+  font-size: 0.86rem;
+}
+
+.contact-number-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.contact-number-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0.52rem 0.74rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(251, 247, 239, 0.66);
+  color: var(--ink);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contact-number-actions a.whatsapp-link {
+  border-color: rgba(49, 95, 104, 0.24);
+  color: var(--river);
+}
+
+.cta-contact {
+  margin-top: 1rem;
+}
+
 .site-footer {
   background: #120d09;
   color: var(--canvas);
@@ -1204,7 +1312,8 @@ textarea {
 }
 
 .footer-grid {
-  width: min(100% - 2rem, var(--max));
+  width: calc(100% - 2rem);
+  max-width: var(--max);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1.1fr 0.7fr 0.7fr 0.8fr;
@@ -1230,8 +1339,20 @@ textarea {
   gap: 0.6rem;
 }
 
+.footer-contact {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.site-footer .contact-number-actions a {
+  background: rgba(251, 247, 239, 0.08);
+  border-color: rgba(251, 247, 239, 0.16);
+  color: var(--canvas);
+}
+
 .footer-bottom {
-  width: min(100% - 2rem, var(--max));
+  width: calc(100% - 2rem);
+  max-width: var(--max);
   margin: 2.5rem auto 0;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(251, 247, 239, 0.14);
@@ -1300,6 +1421,7 @@ textarea {
   .split,
   .story-grid,
   .service-detail,
+  .journey-preview,
   .contact-grid,
   .cta-band {
     grid-template-columns: 1fr;
@@ -1328,8 +1450,35 @@ textarea {
     padding-bottom: 6rem;
   }
 
+  .hero .lead {
+    max-width: 22rem;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .page-hero h1 {
+    max-width: 10ch;
+    font-size: clamp(2.75rem, 13vw, 3.65rem);
+  }
+
+  .page-hero .lead {
+    max-width: 20.5rem;
+  }
+
   .lead {
     color: rgba(251, 247, 239, 0.94);
+  }
+
+  .hero .button-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: min(100%, 22.5rem);
+    max-width: 100%;
+  }
+
+  .hero .btn {
+    min-width: 0;
+    width: 100%;
   }
 
   .hero-proof,
@@ -1345,6 +1494,7 @@ textarea {
   .gallery-grid,
   .field-grid,
   .checkbox-grid,
+  .contact-number-actions,
   .footer-grid {
     grid-template-columns: 1fr;
   }
@@ -1389,6 +1539,15 @@ textarea {
   .gallery-card,
   .gallery-card:nth-child(3n + 1) {
     min-height: 300px;
+  }
+
+  .video-frame video {
+    aspect-ratio: 9 / 12;
+  }
+
+  .contact-number-actions a {
+    justify-content: center;
+    width: 100%;
   }
 
   .footer-bottom {

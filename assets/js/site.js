@@ -3,6 +3,63 @@ const header = document.querySelector(".site-header");
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".site-nav");
 
+const siteContacts = {
+  email: "info@moorswildsafaris.com",
+  phones: [
+    {
+      country: "Zambia",
+      display: "+260 963 518 843",
+      tel: "+260963518843",
+      telHref: "tel:+260963518843",
+      whatsapp: "https://wa.me/260963518843",
+      primary: true,
+    },
+    {
+      country: "Zambia",
+      display: "+260 973 254 974",
+      tel: "+260973254974",
+      telHref: "tel:+260973254974",
+      whatsapp: "https://wa.me/260973254974",
+      primary: false,
+    },
+  ],
+};
+
+window.MOORS_CONTACTS = siteContacts;
+
+const renderContactLists = () => {
+  document.querySelectorAll("[data-contact-list]").forEach((container) => {
+    container.textContent = "";
+    siteContacts.phones.forEach((phone) => {
+      const item = document.createElement("div");
+      item.className = "contact-number";
+
+      const label = document.createElement("strong");
+      label.textContent = `${phone.country}: ${phone.display}`;
+
+      const actions = document.createElement("div");
+      actions.className = "contact-number-actions";
+
+      const callLink = document.createElement("a");
+      callLink.href = phone.telHref;
+      callLink.textContent = "Call";
+
+      const whatsappLink = document.createElement("a");
+      whatsappLink.className = "whatsapp-link";
+      whatsappLink.href = phone.whatsapp;
+      whatsappLink.textContent = phone.primary ? "Primary WhatsApp" : "WhatsApp";
+      whatsappLink.target = "_blank";
+      whatsappLink.rel = "noopener";
+
+      actions.append(callLink, whatsappLink);
+      item.append(label, actions);
+      container.append(item);
+    });
+  });
+};
+
+renderContactLists();
+
 if (navToggle && nav) {
   navToggle.addEventListener("click", () => {
     const isOpen = body.classList.toggle("nav-open");

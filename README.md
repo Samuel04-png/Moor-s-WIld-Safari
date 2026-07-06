@@ -8,9 +8,9 @@ Premium static website for Moor's Wild Safaris, a Zambia-based safari and travel
 - Zambia-first destination coverage with Malawi, Zimbabwe, Botswana, and Namibia as regional operating destinations.
 - Expanded service coverage for private safaris, luxury safaris, family holidays, photographic safaris, walking safaris, birdwatching, camping safaris, lodge and hotel bookings, beach holidays, hiking, adventure tours, cross-border tours, and tailor-made itineraries.
 - Local brand assets copied from the supplied logo files.
-- Generated project-local safari imagery for hero, lodge, camp, photography, and transfer art direction.
+- Real client safari photography and video integrated across hero, experiences, destinations, gallery, hosted support, CTA, and footer contact areas.
 - Responsive CSS design system with warm safari palette, editorial typography, accessible focus states, reduced motion support, mobile navigation, and gallery layout.
-- Lightweight JavaScript for navigation, reveal motion, gallery filtering, lightbox preview, and inquiry form validation.
+- Lightweight JavaScript for navigation, reveal motion, gallery filtering, lightbox preview, centralized contact rendering, and inquiry form validation.
 - SEO files: `robots.txt`, `sitemap.xml`, page metadata, canonical URLs, Open Graph metadata on the homepage, and TravelAgency structured data.
 - Documentation: research ledger, brand asset pack, and QA handoff checklist.
 
@@ -47,9 +47,9 @@ sitemap.xml
 ## Content editing
 
 - Edit page copy directly in the relevant `.html` file.
-- Replace images in `assets/images/` with final client photography using the same filenames to avoid code changes.
-- Update `info@moorswildsafaris.com` and `https://moorswildsafaris.com/` before launch if the final email or domain changes.
-- Replace placeholder testimonials with verified guest reviews before publishing.
+- Curated client media currently lives in `assets/images/moorsimg`, `assets/images/moorsimg2`, and `assets/images/moorsimg3`; the site uses a selected subset to avoid a gallery dump.
+- Update `info@moorswildsafaris.com`, contact numbers in `assets/js/site.js`, and `https://moorswildsafaris.com/` before launch if final details change.
+- Add verified guest reviews before publishing review excerpts.
 - Review `privacy.html` and `terms.html` with the business before launch.
 
 ## Deployment
@@ -60,10 +60,10 @@ Before deployment:
 
 1. Confirm final domain and update canonical URLs plus `sitemap.xml`.
 2. Confirm final email address and form handling.
-3. Replace placeholder review copy with verified reviews.
-4. Add real client photography when available.
+3. Add verified review excerpts only when approved by the client.
+4. Confirm the final client media selection and replace any image if a better place-specific asset is supplied.
 5. Run the QA checklist in `docs/handoff/qa-checklist.md`.
 
-## Image note
+## Image and video note
 
-The current safari photographs are project-local generated art-direction placeholders. They are intended to establish mood and layout until Moor's Wild Safaris supplies real trip photography.
+The site now uses supplied client photography and a short client video. The media is spread through the website as a journey sequence: wildlife identity, camp and lodge stays, route planning, vehicle support, destinations, hosted meals, cultural texture, and inquiry moments.

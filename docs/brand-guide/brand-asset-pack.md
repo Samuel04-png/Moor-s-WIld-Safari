@@ -96,8 +96,10 @@ The current project includes code-ready equivalents of the required brand boards
 |---|---|---|
 | Transparent logo | `assets/logos/moors-wild-safaris-logo-transparent.png` | Header, footer, favicon |
 | Full logo | `assets/logos/moors-wild-safaris-logo-full.jpeg` | Brand reference |
-| Hero image | `assets/images/zambia-safari-golden-hour-hero.png` | Homepage and page hero |
-| Mobile camp image | `assets/images/mobile-safari-camp-golden-hour.png` | Mobile safari and CTA |
-| Lodge image | `assets/images/lodge-safari-river-deck.png` | Lodge safari |
-| Photo safari image | `assets/images/photographic-safari-vehicle-camera.png` | Photographic safari |
-| Transfer image | `assets/images/safari-transfer-cultural-travel.png` | Transfers and culture |
+| Client wildlife hero | `assets/images/moorsimg/1001575809.jpg` | Homepage hero background |
+| Client camp image | `assets/images/moorsimg2/1001426301.jpg` | Private and camping safaris |
+| Client lodge image | `assets/images/moorsimg2/1000772362.jpg` | Lodge and luxury stays |
+| Client photography image | `assets/images/moorsimg3/FB_IMG_1740993110798.jpg` | Photographic safari storytelling |
+| Client transfer image | `assets/images/moorsimg3/FB_IMG_1731176225802.jpg` | Transfers and hosted support |
+| Client journey video | `assets/video/moors-wild-safaris-journey-preview.mp4` | Homepage journey preview |
+| Contact configuration | `assets/js/site.js` | Zambia phone and WhatsApp numbers, ready for future South Africa number |
